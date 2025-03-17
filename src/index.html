@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
     <main>
       <form class="form">
         <label>
@@ -26,15 +24,13 @@
         </label>
         <button class="btn-search" type="submit">Search</button>
       </form>
-      <span class="loader hidden"></span>
-
       <ul class="gallery"></ul>
-
+      <button class="btn-load" type="button">Load more</button>
+      <span class="loader hidden"></span>
       <button id="scrollToTop" class="scroll-to-top">
         <img src="./img/scroll-to-top.svg" alt="Scroll Up" />
       </button>
     </main>
-
     <load src="./partials/footer.html" />
     <script type="module" src="./main.js"></script>
   </body>
