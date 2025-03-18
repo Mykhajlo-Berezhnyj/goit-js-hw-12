@@ -116,3 +116,17 @@ const loadScroll = () => {
 window.addEventListener('scroll', loadScroll);
 */
 
+async function fetchData() {
+    throw new Error("Something went wrong");
+}
+
+async function getData() {
+    try {
+        const data = await fetchData();
+        return data;
+    } catch (error) {
+        return `Caught error: ${error.message}`;
+    }
+}
+
+getData().then(result => console.log(result));
